@@ -906,7 +906,7 @@ function mediamosa_browse_asset_form($form, &$form_state, $asset_id) {
   $asset = reset($result_asset['items']);
 
   // Get all metadata properties for this app.
-  $metadatas = mediamosa_asset_metadata_property::get_metadata_properties_full();
+  $metadatas = mediamosa_asset_metadata_property::get_metadata_properties_full(TRUE);
 
   // Collect the metadata groups.
   $metadata_groups = array();
